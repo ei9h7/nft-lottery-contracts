@@ -1,0 +1,25 @@
+{
+  "description": "This application returns a random integer between a range of integer",
+  "license": "MIT",
+  "author": "?",
+  "social": {
+    "website": "?",
+    "github": "?"
+  },
+  "logo": "logo.png",
+  "buyConf": {
+    "params": {
+      "iexec_args": ""
+    },
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0x6CA656725809BB5600FC0e23076eaa5EdA1d2D03",
+    "name": "Random range integer generator",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/trottoir/random-generator-app:1.0.3",
+    "checksum": "0xed9ed9c1ae277237cf3b6f5ae74a8081acae322129f810d246233bbc0e5561be"
+  }
+}
