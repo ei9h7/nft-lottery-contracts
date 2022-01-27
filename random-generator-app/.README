@@ -1,0 +1,23 @@
+'Test it in local'
+
+```
+docker run --rm \
+  -v /tmp/iexec_in:/iexec_in \
+  -v /tmp/iexec_out:/iexec_out \
+  -e IEXEC_IN=/iexec_in \
+  -e IEXEC_OUT=/iexec_out \
+  random-generator-app 0 40
+
+```
+
+'Run the task'
+
+```
+iexec app run --args "1 10" --watch --chain viviani
+```
+
+'Show the task'
+
+```
+iexec task show 0x43bb3fb12555f1c81961ea9d9d309f56b9f079e9188f8a02249590d592908f78 --download my-result --chain viviani
+```
