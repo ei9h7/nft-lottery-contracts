@@ -107,4 +107,8 @@ contract Lottery is Ownable {
     function getRandomNumber() internal view returns(uint){
         return uint(keccak256(abi.encodePacked(block.timestamp,block.difficulty,  msg.sender)));
     }
+
+    function withdraw() external payable onlyOwner {
+        payable(msg.sender).transfer(address(this).balance);   
+    }
 }

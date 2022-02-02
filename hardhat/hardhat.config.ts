@@ -22,7 +22,9 @@ const config: HardhatUserConfig = {
 	},
 	networks: {
 		hardhat: {
-			gas: 'auto',
+			forking: {
+				url: process.env.RINKEBY_URL || '',
+			},
 		},
 		iExecSidechain: {
 			url: 'https://viviani.iex.ec',
@@ -33,6 +35,14 @@ const config: HardhatUserConfig = {
 			accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
 			gas: 10000000,
 			gasPrice: 10000000000,
+		},
+		rinkeby: {
+			url: 'https://eth-rinkeby.alchemyapi.io/v2/6gOIKOLyqi69wGI_xjZP8NFPkoKHoYGW',
+			accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+			chainId: 4,
+			gas: 400000000,
+			// Change it following needs
+			gasPrice: 100000000000,
 		},
 	},
 };
