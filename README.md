@@ -1,15 +1,15 @@
-# iExec-Space-Lottery
+# iExec-NFT-Lottery
 
-A lottery based on iExec technology with NFT
+A lottery with NFTs based on iExec technology
 
 LotteryContract =>
 
-- Players mint NFT ticket with an ID vs ETH
+- Players mint NFT ticket with ETH
 - Start the lottery
-- Fake a random number with block complexty (not a real random) to get a range
-- Owner contract is the obly able to mint the both NFT
+- Fake a psuedo-random number with block complexity (not a real random) to get a range
+- Owner contract is the only able to mint both NFTs (Tickets & Winner)
 - Send a NFT Winner Ticket to the winner + give him the funds
-- 9% of taxes stays to the Lottey Smart contract
+- 9% Smart contract
 
 NFTLotteryTicket =>
 
