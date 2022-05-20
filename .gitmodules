@@ -1,0 +1,3 @@
+[submodule "iexecRandom"]
+	path = iexecRandom
+	url = https://github.com/ei9h7/iexec-randomness.git
