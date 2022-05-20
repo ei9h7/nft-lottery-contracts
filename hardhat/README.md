@@ -8,5 +8,6 @@ Try running some of the following tasks:
 ```
 npx hardhat test
 npx hardhat coverage
-npx hardhat run scripts/deploy.ts
+npx hardhat run scripts/deploy.ts --network goerli
+npx hardhat verify
 ```
